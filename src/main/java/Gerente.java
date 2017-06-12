@@ -7,6 +7,11 @@ public class Gerente extends Funcionario {
     }
 
     public double getSalarioLiquido() {
-        return 0;
+        if (getSalarioBase() >= 5000){
+            return getSalarioBase() * 0.7;
+        }
+        else{
+            return getSalarioBase() * 0.8;
+        }
     }
 }

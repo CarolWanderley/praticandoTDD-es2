@@ -8,6 +8,11 @@ public class Desenvolvedor extends Funcionario {
     }
 
     public double getSalarioLiquido() {
-            return 0;
+            if (getSalarioBase() >= 3000){
+                return getSalarioBase() * 0.8;
+            }
+            else{
+                return getSalarioBase() * 0.9;
+            }
     }
 }
